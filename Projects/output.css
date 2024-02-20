@@ -1176,6 +1176,14 @@ video {
   width: 94vw;
 }
 
+.w-\[80vw\] {
+  width: 80vw;
+}
+
+.w-\[85vw\] {
+  width: 85vw;
+}
+
 .max-w-screen-lg {
   max-width: 1024px;
 }
