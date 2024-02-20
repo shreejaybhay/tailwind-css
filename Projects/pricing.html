@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <section
+    class="absolute z-50 hidden w-screen h-screen bg-black bg-opacity-80"
+    id="Upgrade-your-plan"
+  >
+    <div class="w-screen h-screen my-2">
+      <div
+        class="w-[65%] h-[97.5%] m-auto bg-[#2F2F2F] flex flex-col justify-between border-[1px] border-[#444444] rounded-md"
+      >
+        <div class="w-full h-20">
+          <div
+            class="flex items-center justify-between w-full h-full px-6 border-[#444444] border-b-[1px]"
+          >
+            <h1 class="text-lg font-bold text-white">Upgrade your plan</h1>
+              <button id="close-pricing" >
+              <svg
+                class="text-white"
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-5 h-5"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="grid w-full h-full grid-cols-3">
+          <div
+            class="flex flex-col justify-between p-5 border-[#444444] border-r-[1px]"
+          >
+            <div>
+              <div class="w-full">
+                <div class="">
+                  <h1 class="text-xl font-medium text-white">Free</h1>
+                  <p class="text-[#96B4B4] mb-4">USD $0/month</p>
+                  <button
+                    class="bg-[#4B4B4B] text-[#686868] py-3 w-full rounded-md cursor-not-allowed mb-4 font-bold text-sm"
+                  >
+                    Your current plan
+                  </button>
+                </div>
+              </div>
+              <div class="w-full">
+                <div class="text-white">
+                  <h1 class="mb-4 text-sm font-medium">
+                    For people just getting started with ChatGPT
+                  </h1>
+                  <ul class="text-sm font-normal text-white">
+                    <li class="flex items-start mb-2">
+                      <span class="w-9"
+                        ><svg
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="w-4 h-4 mt-1 mr-2"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline></svg
+                      ></span>
+                      <div class="flex flex-col">
+                        <p>Unlimited messages,</p>
+                        <p>interactions, and history</p>
+                      </div>
+                    </li>
+                    <li class="flex items-center mb-2">
+                      <span class="w-9"
+                        ><svg
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="w-4 h-4 mt-1 mr-2"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <p>Access to our GPT-3.5 model</p>
+                    </li>
+                    <li class="flex items-center">
+                      <span class="w-9">
+                        <svg
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="w-4 h-4 mt-1 mr-2"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <p>Access on Web, iOS, and Android</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="text-xs text-white">
+              <p>
+                Have an existing plan? See
+                <a class="underline" href="">billing help</a>
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-between p-5 border-[#444444] border-r-[1px]"
+          >
+            <div>
+              <div class="w-full">
+                <div class="">
+                  <div class="flex items-center gap-2">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="text-green-600 icon-md"
+                    >
+                      <path
+                        d="M8.78158 8.60266L9.8188 5.49098C10.037 4.83634 10.963 4.83634 11.1812 5.49098L12.2184 8.60266C12.7187 10.1035 13.8965 11.2813 15.3973 11.7816L18.509 12.8188C19.1637 13.037 19.1637 13.963 18.509 14.1812L15.3973 15.2184C13.8965 15.7187 12.7187 16.8965 12.2184 18.3973L11.1812 21.509C10.963 22.1637 10.037 22.1637 9.8188 21.509L8.78158 18.3973C8.28128 16.8965 7.10354 15.7187 5.60266 15.2184L2.49098 14.1812C1.83634 13.963 1.83634 13.037 2.49098 12.8188L5.60266 11.7816C7.10354 11.2813 8.28128 10.1035 8.78158 8.60266Z"
+                        fill="currentColor"
+                      ></path>
+                      <path
+                        d="M17.1913 3.69537L17.6794 2.23105C17.7821 1.92298 18.2179 1.92298 18.3206 2.23105L18.8087 3.69537C19.0441 4.40167 19.5983 4.9559 20.3046 5.19133L21.769 5.67944C22.077 5.78213 22.077 6.21787 21.769 6.32056L20.3046 6.80867C19.5983 7.0441 19.0441 7.59833 18.8087 8.30463L18.3206 9.76895C18.2179 10.077 17.7821 10.077 17.6794 9.76895L17.1913 8.30463C16.9559 7.59833 16.4017 7.0441 15.6954 6.80867L14.231 6.32056C13.923 6.21787 13.923 5.78213 14.231 5.67944L15.6954 5.19133C16.4017 4.9559 16.9559 4.40167 17.1913 3.69537Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    <h1 class="text-xl font-medium text-white">Plus</h1>
+                  </div>
+                  <p class="text-[#96B4B4] mb-4">USD $20/month</p>
+                  <button
+                    class="bg-[#10A37F] text-white py-3 w-full rounded-md cursor-pointer mb-4 hover:bg-[#008F6B] font-bold text-sm"
+                  >
+                    Upgrade to Team
+                  </button>
+                </div>
+              </div>
+              <div class="w-full">
+                <div class="text-white">
+                  <h1 class="mb-4 text-sm font-medium">
+                    Everything in Plus, and:
+                  </h1>
+                  <ul class="text-sm font-normal text-white">
+                    <li class="flex items-start mb-2">
+                      <span class="mr-2"
+                        ><svg
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="w-4 h-4 mt-1 mr-2"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline></svg
+                      ></span>
+                      <div class="flex flex-col">
+                        <p>
+                          Higher message caps on GPT-4 and tools like DALL·E,
+                          Browsing, Advanced Data Analysis, and more
+                        </p>
+                      </div>
+                    </li>
+                    <li class="flex items-start mb-2">
+                      <span class="mr-2"
+                        ><svg
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="w-4 h-4 mt-1 mr-2"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <p>Create and share GPTs with your workspace</p>
+                    </li>
+                    <li class="flex items-start mb-2">
+                      <span class="mr-2">
+                        <svg
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="w-4 h-4 mt-1 mr-2"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <p>Admin console for workspace management</p>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">
+                        <svg
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="w-4 h-4 mt-1 mr-2"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <p>* Price billed annually, minimum 2 users</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="text-xs text-white">
+              <p>
+                Have an existing plan? See
+                <a class="underline" href="">billing help</a>
+              </p>
+            </div> -->
+          </div>
+
+          <div
+            class="flex flex-col justify-between p-5 border-[#444444] border-r-[1px]"
+          >
+            <div>
+              <div class="w-full">
+                <div class="">
+                  <div class="flex items-center gap-2">
+                    <svg
+                      class="text-[#0066DD]"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      class="icon-md text-brand-blue-800"
+                      width="18"
+                      height="18"
+                    >
+                      <path
+                        d="M12.784 1.442a.8.8 0 0 0-1.569 0l-.191.953a.8.8 0 0 1-.628.628l-.953.19a.8.8 0 0 0 0 1.57l.953.19a.8.8 0 0 1 .628.629l.19.953a.8.8 0 0 0 1.57 0l.19-.953a.8.8 0 0 1 .629-.628l.953-.19a.8.8 0 0 0 0-1.57l-.953-.19a.8.8 0 0 1-.628-.629l-.19-.953h-.002ZM5.559 4.546a.8.8 0 0 0-1.519 0l-.546 1.64a.8.8 0 0 1-.507.507l-1.64.546a.8.8 0 0 0 0 1.519l1.64.547a.8.8 0 0 1 .507.505l.546 1.641a.8.8 0 0 0 1.519 0l.546-1.64a.8.8 0 0 1 .506-.507l1.641-.546a.8.8 0 0 0 0-1.519l-1.64-.546a.8.8 0 0 1-.507-.506L5.56 4.546Zm5.6 6.4a.8.8 0 0 0-1.519 0l-.147.44a.8.8 0 0 1-.505.507l-.441.146a.8.8 0 0 0 0 1.519l.44.146a.8.8 0 0 1 .507.506l.146.441a.8.8 0 0 0 1.519 0l.147-.44a.8.8 0 0 1 .506-.507l.44-.146a.8.8 0 0 0 0-1.519l-.44-.147a.8.8 0 0 1-.507-.505l-.146-.441Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    <h1 class="text-xl font-medium text-white">Team</h1>
+                  </div>
+                  <p class="text-[#96B4B4] mb-4">USD $25 per person/month*</p>
+                  <button
+                    class="bg-[#0066DE] text-white py-3 w-full rounded-md cursor-pointer mb-4 hover:bg-[#1D4ED8] font-bold text-sm"
+                  >
+                    Upgrade to Team
+                  </button>
+                </div>
+              </div>
+              <div class="w-full">
+                <div class="text-white">
+                  <h1 class="mb-4 text-sm font-medium">
+                    Everything in Plus, and:
+                  </h1>
+                  <ul class="text-sm font-normal text-white">
+                    <li class="flex items-start mb-2">
+                      <span class="mr-2"
+                        ><svg
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="w-4 h-4 mt-1 mr-2"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline></svg
+                      ></span>
+                      <div class="flex flex-col">
+                        <p>
+                          Higher message caps on GPT-4 and tools like DALL·E,
+                          Browsing, Advanced Data Analysis, and more
+                        </p>
+                      </div>
+                    </li>
+                    <li class="flex items-start mb-2">
+                      <span class="mr-2"
+                        ><svg
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="w-4 h-4 mt-1 mr-2"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <p>Create and share GPTs with your workspace</p>
+                    </li>
+                    <li class="flex items-start mb-2">
+                      <span class="mr-2">
+                        <svg
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="w-4 h-4 mt-1 mr-2"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <p>Admin console for workspace management</p>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="mr-2">
+                        <svg
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="w-4 h-4 mt-1 mr-2"
+                          height="1em"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <p>* Price billed annually, minimum 2 users</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="text-xs text-white">
+              <p>
+                Have an existing plan? See
+                <a class="underline" href="">billing help</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-20">
+          <div
+            class="flex items-center justify-center w-full h-full text-white border-[#444444] border-t-[1px]"
+          >
+            <p class="text-sm font-normal">
+              Need more capabilities? See
+              <a class="font-medium underline" href="">ChatGPT Enterprise</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <script src="chat-gpt.js"></script>
+</body>
+</html>
